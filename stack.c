@@ -18,7 +18,7 @@ pop(struct stack* stack);
 
 int
 main(int argc, char* argv[]){
-    int i = 0;
+ 
     int num;
     printf("Enter a number: \n");
     scanf("%d",&num);
