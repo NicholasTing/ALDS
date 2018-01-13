@@ -1,8 +1,6 @@
 #Coded by Nicholas Ting
 #Coded on 11/1/2018
 #Revision on Python 3
-#Stack coded in python3
-#Incomplete
 
 num_elems = int(input())
 
@@ -21,9 +19,8 @@ print("Starting stack: ")
 print(stack)
 
 print("What would you like to do?")
-print("Commands: append pop exit")
 
-command = input()
+command = input("Commands: append pop exit\n")
 
 while command != "exit":
 
