@@ -1,4 +1,4 @@
-#Coded by Nicholas Ting
+#Coded by Nicholas Ting Jing Kun
 #Coded on 11/1/2018
 #Revision on Python 3
 
