@@ -10,7 +10,7 @@ struct queue{
 struct queue*
 makeQueue(int data);
 
-struct queue*
+void
 pushQueue(struct queue* queue, int data);
 
 void
@@ -28,7 +28,7 @@ main(int argc, char* argv[]){
     printf("Keep inserting data...\n");
 
     while(scanf("%d",&num)==1){
-        queue = pushQueue(queue,num);
+        pushQueue(queue,num);
     }
     popQueue(head);
 
@@ -48,16 +48,19 @@ makeQueue(int data){
     return q;
 }
 
-struct queue*
+void
 pushQueue(struct queue* queue, int data){
     struct queue* q = malloc(sizeof(*q));
     if(q == NULL){
         printf("Failure\n");
     }
+    while(queue->next != NULL){
+        queue = queue->next;
+    }
     q->size = queue->size + 1;
     q->data = data;
+    q->next = NULL;
     queue->next = q;
-    return q;
 }
 
 void
