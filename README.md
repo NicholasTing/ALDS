@@ -8,3 +8,6 @@ Updates:
 2. Try to post at least once a week.
 3. Try to provide self-documenting code, and useful comments.
 4. CPP or Python usually
+
+Reality:
+1. Sorry, have not been doing much revision lately. Have been busy and I am going to try my best to update it soon*.
